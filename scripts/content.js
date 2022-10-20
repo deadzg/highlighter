@@ -10,19 +10,7 @@ document.addEventListener('mouseup', function(){
             });
         }, 100);
     }
-}, false)
-
-// chrome.runtime.sendMessage({greeting: "selectedText"}, function(response) {
-//     console.log(response);
-// });
-
-// setTimeout(() => {
-//     chrome.runtime.sendMessage({action: "update UI", results: dataForUI}, 
-//         (response)=> {
-//           console.log(response.message)
-//         }
-//     )
-// }, 100);
+}, false);
 
 
 function getSelectionText(){

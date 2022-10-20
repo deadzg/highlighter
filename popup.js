@@ -2,17 +2,18 @@ document.getElementById("download").addEventListener("click", download);
 document.getElementById("clearCache").addEventListener("click", clearCache);
 
 function clearCache() {
+    console.log("Clearing the local storage...")
     chrome.storage.local.clear();
+    console.log("Local storage clear: Success!!")
 }
 
 function download() {
     chrome.storage.local.get(['url'], function(result) {
-        console.log("Updated Value currently is ", result.url);
+        console.log("Content in local storage: {} ", result.url);
         var data = new Blob([result.url], {type: 'text/plain'});
         var textFile = window.URL.createObjectURL(data);
-        console.log("File path:")
         console.log(textFile);
-        downloadFile(textFile, "testdownload.txt");
+        downloadFile(textFile, "highlights.txt");
     });    
 }
 

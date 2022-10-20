@@ -22,7 +22,9 @@
         ],
         "matches": [
           "https://developer.chrome.com/docs/extensions/*",
-          "https://developer.chrome.com/docs/webstore/*"
+          "https://developer.chrome.com/docs/webstore/*",
+          "https://www.confluent.io/en-gb/blog/*",
+          "https://kafka.apache.org/*"
         ]
       }
     ],
